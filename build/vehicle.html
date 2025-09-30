@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles</title>
+    <link rel="stylesheet" href="output.css"/>
+</head>
+<body class="min-h-full bg-white dark:text-white text-black dark:bg-black text-[min(10vw,20px)]">
+    <!-- header-container -->
+    <header class="w-full h-20 bg-[#8B5CF6] text-white sticky top-0 z-10 flex items-center justify-between px-6 hover:shadow-md"> 
+       <!-- logo -->
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 bg-white rounded-full flex justify-center items-center hover:scale-105 transition-transform duration-300 hover:shadow-md">
+          <a href="index.html"><img class="w-10 h-10 hover:skew-x-180  transition-all" src="img/a.png" alt="My Logo" title="Logo"></a>
+        </div>
+
+        <h1 class="font-medium text-2xl text-white max-md:hidden">
+          <a href="index.html">Mizam 
+            <sub class="text-xs font-bold -ml-1">
+              TM
+            </sub>
+           </a>
+         </h1>
+
+      </div>
+        <!-- nav -->
+        <nav class="hidden md:flex space-x-6 font-medium text-lg">
+            <a href="index.html" class="hover:text-gray-900 transition-colors bg-white p-2 rounded-md hover:bg-inherit hover:border-2 hover:underline underline-offset-4 text-gray-900 hover:shadow-md">Home</a>
+            <a href="#" class="hover:text-gray-900 transition-colors hover:bg-white p-2 rounded-md hover:underline underline-offset-4 hover:shadow-md">Vehicles</a>
+            <a href="#" class="hover:text-gray-900 transition-colors hover:bg-white p-2 rounded-md hover:underline underline-offset-4 hover:shadow-md">Shopping</a>
+            <a href="#" class="hover:text-gray-900 transition-all hover:bg-white p-2 rounded-md hover:underline underline-offset-4 hover:shadow-md">Owners</a>
+        </nav>
+         <!-- hamburger -->
+        <button id="hamburger-button" class="relative cursor-pointer md:hidden text-3xl w-8 h-8 flex flex-col justify-center items-center">
+          <div class="absolute bg-white w-8 h-1 rounded top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:absolute before:rounded before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500
+          after:content-[''] after:bg-white after:w-8 after:h-1 after:absolute after:rounded after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
+        </button>
+    </header>
+    <!-- main-container -->
+    <main>
+        <section class="grid grid-cols-2 lg:grid-cols-4">
+            <aside class="mt-10">
+                <span class="grid font-medium ">
+                  <a class="underline ml-10" href="#">Crossovers & SUVs</a>
+                  <a class="hover:underline mt-4 ml-10 " href="#">Cars & Minivan</a>
+                  <a class="hover:underline mt-4 ml-10" href="#">Trucks</a>
+                  <a class="hover:underline mt-4 ml-10"  href="#">Performance</a>
+                  <a class="hover:underline mt-4 ml-10"  href="#">Electrified</a>
+                  <a class="hover:underline mt-4 ml-10 mb-10"  href="#">Upcoming Vehicles</a>
+                </span>
+                <hr class="ml-10 w-72">
+                <span class="grid font-medium">
+                  <a class="hover:underline ml-10 mt-6"  href="#">Gazoo Racing</a>
+                  <a class="hover:underline mt-4 ml-10 mb-6"  href="#">TRD Pro 
+                    <sup class="text-red-400 font-thin font-mono">TRD</sup>
+                  </a>  
+                </span>
+                <hr class="ml-10 w-72">
+                <span class="grid text-sm font-medium">
+                  <a class="hover:underline mt-8 ml-10"  href="#">View All Vehicles ></a>
+                  <a class="hover:underline mt-4 ml-10"  href="#">Toyota Certified Used Vehicles↗</a>
+                </span>
+            </aside>
+
+            <section class="grid lg:grid-cols-3 lg:gap-x-96 lg:gap-y-8 mt-10 relative">
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                   <img class="" src="img/12b.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$30,035 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">Corolla Cross
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$24,635* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                  <p class="bg-gray-200 py-1 text-center border border-black text-black rounded-sm text-sm font-medium -mt-4 mb-1 ml-6 w-24">Hybird EV</p>
+                   <img class="" src="img/12.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$33,530 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">Corolla Cross Hybird
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$28,995* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-4 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                   <img class="" src="img/12c.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$38,105 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">RAV4
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$29,800* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                  <p class="bg-gray-200 py-1 text-center border border-black text-black rounded-sm text-sm font-medium -mt-4 mb-1 ml-6 w-24">Battery EV</p>
+                   <img class="" src="img/12c.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$43,775 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">bZ
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$34,900* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                  <p class="bg-gray-200 py-1 text-center border border-black text-black rounded-sm text-sm font-medium -mt-4 mb-1 ml-6 w-32">Plug-in Hybird EV</p>
+                   <img class="" src="img/12b.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$52,120 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">RAV4 Plug-in Hybrid
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$44,815* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                  <p class="bg-gray-200 py-1 text-center border border-black text-black rounded-sm text-sm font-medium -mt-4 mb-1 ml-6 w-24">Hybird EV</p>
+                   <img class="" src="img/12.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$36,070 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">RAV4 Hybird
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$32,850* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                   <img class="" src="img/12b.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$30,035 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">Corolla Cross
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$24,635* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                  <p class="bg-gray-200 py-1 text-center border border-black text-black rounded-sm text-sm font-medium -mt-4 mb-1 ml-6 w-24">Hybird EV</p>
+                   <img class="" src="img/12.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$33,530 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">Corolla Cross Hybird
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$28,995* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-4 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                   <img class="" src="img/12c.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$38,105 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">RAV4
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$29,800* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                  <p class="bg-gray-200 py-1 text-center border border-black text-black rounded-sm text-sm font-medium -mt-4 mb-1 ml-6 w-24">Battery EV</p>
+                   <img class="" src="img/12c.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$43,775 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">bZ
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$34,900* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                  <p class="bg-gray-200 py-1 text-center border border-black text-black rounded-sm text-sm font-medium -mt-4 mb-1 ml-6 w-32">Plug-in Hybird EV</p>
+                   <img class="" src="img/12b.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$52,120 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">RAV4 Plug-in Hybrid
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$44,815* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                  <p class="bg-gray-200 py-1 text-center border border-black text-black rounded-sm text-sm font-medium -mt-4 mb-1 ml-6 w-24">Hybird EV</p>
+                   <img class="" src="img/12.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$36,070 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">RAV4 Hybird
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$32,850* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                   <img class="" src="img/12b.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$30,035 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">Corolla Cross
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$24,635* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                  <p class="bg-gray-200 py-1 text-center border border-black text-black rounded-sm text-sm font-medium -mt-4 mb-1 ml-6 w-24">Hybird EV</p>
+                   <img class="" src="img/12.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$33,530 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">Corolla Cross Hybird
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$28,995* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-4 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+
+                <div class="flex flex-col w-[20rem] h-[19rem] hover:bg-gray-300 hover:border-gray-700 rounded-md hover:text-black pt-8 cursor-pointer">
+                   <img class="" src="img/12c.webp" alt="">
+                   <p6 class="text-center text-sm font-mono mt-4">$38,105 as shown*
+                   </p6>
+                   <p2 class="ml-6 font-bold tracking-wider mt-2">RAV4
+                   </p2>
+                   <p3 class="ml-6 mt-2 text-base mb-2 tracking-wide ">$29,800* Starting MSRP</p3>
+                   <span class="flex gap-10 ml-6 text-sm text-black hover:tracking-wide hover:opacity-85 font-medium mb-2 hideen group-hover:opacity-100">
+                     <a href="#">Build ></a>
+                     <a href="#">Special Offers ></a>
+                   </span>
+                </div>
+            </section>
+
+            <section>
+              <div class="w-4/12 h-auto bg-gray-300"></div>
+            </section>
+
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-[#8B5CF6] text-white text-center py-10">
+      <!-- @lg sec -->
+      <section class="max-w-5xl md:mx-auto p-4 mb-10">
+        <nav class="hidden lg:flex lg:flex-wrap lg:justify-center lg:space-x-8 font-medium ">
+          <a class="hover:opacity-90 hover:underline" href="#">Accessibility</a>
+          <a class="hover:opacity-90 hover:underline" href="#">YOUR PRIVACY CHOICE</a>
+          <a class="hover:opacity-90 hover:underline" href="#">HOW TO DISCONNECT REMOTE VEHICLE ACCESS</a>
+          <a class="hover:opacity-90 hover:underline" href="#">Cookies Consent Options</a>
+        </nav>
+      </section>
+
+      <!-- @sm:md sec -->
+       <section class="flex text-left max-w-4xl p-4 mb-10 -mt-16 lg:hidden">
+        <nav class="flex flex-col font-medium space-y-4">
+          <a class="hover:opacity-90 hover:underline" href="#">Accessibility</a>
+          <a class="hover:opacity-90 hover:underline text-red-700" href="#">YOUR PRIVACY CHOICE</a>
+          <a class="hover:opacity-90 hover:underline" href="#">HOW TO DISCONNECT REMOTE VEHICLE ACCESS</a>
+          <a class="hover:opacity-90 hover:underline" href="#">Cookies Consent Options</a>
+        </nav>
+      </section>
+
+      <div class="lg:flex lg:items-center lg:justify-between lg:mx-auto lg:max-w-2xl mx-5 mb-12">
+        <a href="#"><button class="bg-red-600 lg:py-1.5 py-1.5 px-6 lg:px-5 font-medium rounded-3xl hover:bg-red-700 hover:opacity-90 translations-all duration-300 hover:translate-x-5 sm:-mt-6 mb-4 ">
+          Manage Preferences
+        </button></a>
+
+        <div class="flex lg:-mt-3 space-x-2 sm:space-x-6 sm:mt-5">
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/Facebook.png" alt=""/>
+          </a>
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/Linkedin.png">
+          </a>
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/YOUTUBE.png">
+          </a>
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/x.png">
+          </a>
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/insta.png">
+          </a>
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/Tiktok.png">
+          </a>
+        </div>
+      </div>
+
+           <!-- more links on sm:md -->
+            <div class="flex flex-col">
+              <div class="flex justify-between md:hidden border-b-2 border-gray-400 py-3 bg-white">
+                 <span class="font-bold dark:text-slate-600">
+                  SHOPPING TOOLS
+                 </span> 
+                 <span class="cursor-pointer">➕</span>
+              </div>
+
+              <div class="flex justify-between md:hidden border-b-2 border-gray-400 py-3 bg-white">
+                 <a href="vehicle.html">
+                  <span class="font-bold dark:text-slate-600">
+                  VEHICLES
+                 </span>
+                </a>
+                 <span class="cursor-pointer">➕</span>
+              </div>
+              <div class="flex justify-between md:hidden border-b-2 border-gray-400 py-3 bg-white">
+                 <span class="font-bold dark:text-slate-600">
+                  HELPFUL LINKS
+                 </span> 
+                 <span class="cursor-pointer">➕</span>
+              </div>
+              <div class="flex justify-between md:hidden border-b-2 border-gray-400 py-3 bg-white">
+                 <span class="font-bold dark:text-slate-600">
+                  OWNERS
+                 </span> 
+                 <span class="cursor-pointer">➕</span>
+              </div>
+              <div class="flex justify-between md:hidden border-b-2 border-gray-400 py-3 bg-white">
+                 <span class="font-bold dark:text-slate-600">
+                  ABOUT MIZAM
+                 </span> 
+                 <span class="cursor-pointer">➕</span>
+              </div>
+            </div>
+
+            <!-- more links on lg -->
+      <div class="lg:flex lg:mx-14 justify-between hidden mb-24">
+        <!-- shopping tools -->
+        <div class="flex flex-col">
+          <h3 class="font-bold text-base mb-2">SHOPPING TOOLS</h3>
+          <a href="#" class="text-sm hover:underline hover:opacity-90  ml-14 mb-2">
+            <span>
+              Kelley Blue Book Trade-In Value
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90  mb-2 -ml-12">
+            <span>
+             Build Your Car
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-9">
+            <span>
+              Search Inventory
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-14">
+            <span>
+              Find a Dealer 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-9">
+            <span>
+              Shop Online With SmartPath 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-16">
+            <span>
+              Special Offer
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-4">
+            <span>
+             What Fits My Budget
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 -ml-7 mb-2">
+            <span>
+              Payment Estimator
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-10">
+            <span>
+              Request a Quote  
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-10">
+            <span>
+              Mizam Certified Used Vehicles
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-1">
+            <span>
+              Buy Parts & Accessories
+            </span>
+          </a>
+        </div>
+               <!-- Vehicles -->
+        <div class="flex flex-col">
+          <h3 class="font-bold text-base mb-2">VEHICLES</h3>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-11">
+            <span>
+              All Mizam Vehicles
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-10">
+            <span>
+              SUVs
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-9">
+            <span>
+              Trucks
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-11">
+            <span>
+              Cars
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-1">
+            <span>
+              Crossovers 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-10">
+            <span>
+              Electrified Vehicles
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-8">
+            <span>
+             Hybrid 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-1">
+            <span>
+              Hybrid Cars
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-0">
+            <span>
+             Hybrid SUVs  
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-3">
+            <span>
+              TRD Pro Series
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-9">
+            <span>
+              Nightshade Series
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-3">
+            <span>
+              GR Garage
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-14">
+            <span>
+              All Upcoming Vehicles
+            </span>
+          </a>
+        </div>
+           <!-- Helpful Links -->
+        <div class="flex flex-col">
+          <h3 class="font-bold text-base mb-2">HELPFUL LINKS</h3>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-20 -mr-2">
+            <span>
+              Dealers
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-2">
+            <span>
+             Deals and Incentives
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-36 -ml-4">
+            <span>
+              Audio Multimedia & Connected services
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-14 -ml-1">
+            <span>
+              Mobile Phone Compatibility 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-20 ml-2">
+            <span>
+              Mobility 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-14 ml-2">
+            <span>
+              Mizam Fleet
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-7">
+            <span>
+             Mizam Financial Services
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-9">
+            <span>
+              Southeast Mizam Finance
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-6">
+            <span>
+              Mizam Insurance 
+            </span>
+          </a>
+        </div>
+              <!-- OwnerS -->
+        <div class="flex flex-col">
+          <h3 class="font-bold text-base mb-2">OWNERS</h3>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-5">
+            <span>
+              Owners Home
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-36 mr-1">
+            <span>
+             MizamCare & Maintenance Plans
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-40">
+            <span>
+              Safety Recalls & Service Campaigns
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-9">
+            <span>
+              Service Centers 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-9">
+            <span>
+              Service Specials
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-2">
+            <span>
+              Safety Hub
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-11">
+            <span>
+              Schedule Service
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-8">
+            <span>
+              Warning Lights
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-20 mr-1">
+            <span>
+              Manuals & Warranties  
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-11 -mr-1">
+            <span>
+              Manage Payments
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-4">
+            <span>
+              Rent a Mizam
+            </span>
+          </a>
+        </div>
+          <!-- ABOUT MIZAM -->
+        <div class="flex flex-col">
+          <h3 class="font-bold text-base mb-2">ABOUT MIZAM</h3>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-16">
+            <span>
+              Careers
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-14 -mr-1">
+            <span>
+             About Us
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-6">
+            <span>
+              Our Company
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-1">
+            <span>
+              Mizam Outfitters 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-10">
+            <span>
+              Newsroom
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-6">
+            <span>
+              Mizam Global
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-6">
+            <span>
+              Gazoo Racing
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-10">
+            <span>
+              Plant Tours
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-3">
+            <span>
+              Partner With Mizam  
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-14">
+            <span>
+              Hydrogen Fuel Cell Solution
+            </span>
+          </a>
+        </div>
+      </div>
+      <hr class="lg:flex w-10/12 mx-auto bg-gray-700 hidden">
+      <section class="flex md:justify-center">
+        <div class="bg-white w-12 h-11 mt-10 ml-5">
+          <img class="w-10 h-10" src="img/a.png" alt="LOGO">
+        </div>
+        <h2 class="mt-11 text-3xl font-semibold ml-3">MIZAM</h2>
+      </section>
+
+      <div class="flex space-x-6 mt-10 ml-5 font-medium text-sm md:justify-center">
+        <a class="hover:underline" href="#">Contact Us</a>
+        <a class="hover:underline" href="#">FAQs</a>
+        <a class="hover:underline" href="#">Español</a>
+      </div>
+      
+      <span class="flex mt-14  text-xs md:justify-center">&copy;0025 Mizam Motor Sales, Nigeria, Inc. All information applies to Nigeria. vehicles only.</span>
+
+      <section class="flex space-x-5 justify-center mt-8 mb-24 md:mb-16">
+        <a class="text-xs border-r hover:underline" href="#">
+          <span class="mr-4">
+            Privacy Notice
+          </span>
+        </a>
+        <a class="text-xs border-r-2 hover:underline" href="#">
+          <span class="mr-4">
+            Legal Terms
+          </span>
+        </a>
+        <a class="text-xs hover:underline" href="#">
+          <span>
+            Site Map
+          </span>
+        </a>
+      </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mizam Cars</title>
+  <link rel="stylesheet" href="output.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</head>
+<body class="min-h-full flex flex-col font-sans bg-gradient-to-br from-[#2a2a2a] to-[#383838] dark:text-white scroll-smooth"> 
+  <!-- header-container -->
+    <header class="w-full h-20 bg-[#8B5CF6] text-white sticky top-0 z-10 flex items-center justify-between px-6 hover:shadow-md"> 
+       <!-- logo -->
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="w-12 h-12 bg-white rounded-full flex justify-center items-center hover:scale-105 transition-transform duration-300 hover:shadow-md">
+          <img class="w-10 h-10 hover:skew-x-180  transition-all" src="img/a.png" alt="My Logo" title="Logo">
+        </a>
+
+        <h1 class="font-medium text-2xl text-white max-md:hidden">
+          <a href="index.html">Mizam 
+            <sub class="text-xs font-bold -ml-1">
+              TM
+            </sub>
+           </a>
+         </h1>
+
+      </div>
+        <!-- nav -->
+        <nav class="hidden md:flex space-x-6 font-medium text-lg">
+            <a href="index.html" class="hover:text-gray-900 transition-colors bg-white p-2 rounded-md hover:bg-inherit hover:border-2 hover:underline underline-offset-4 text-gray-900 hover:shadow-md">Home</a>
+            <a href="vehicle.html" target="_blank" class="hover:text-gray-900 transition-colors hover:bg-white p-2 rounded-md hover:underline underline-offset-4 hover:shadow-md">Vehicles</a>
+            <a href="#" class="hover:text-gray-900 transition-colors hover:bg-white p-2 rounded-md hover:underline underline-offset-4 hover:shadow-md">Shopping</a>
+            <a href="#" class="hover:text-gray-900 transition-all hover:bg-white p-2 rounded-md hover:underline underline-offset-4 hover:shadow-md">Owners</a>
+        </nav>
+         <!-- hamburger -->
+        <button id="hamburger-button" class="relative cursor-pointer md:hidden text-3xl w-8 h-8 flex flex-col justify-center items-center">
+          <div class="absolute bg-white w-8 h-1 rounded top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:absolute before:rounded before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500
+          after:content-[''] after:bg-white after:w-8 after:h-1 after:absolute after:rounded after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
+        </button>
+    </header>
+     <!-- main-content -->
+    <main class="container flex-1 flex flex-col items-center mx-auto gap-12 md:pt-40 mb-10"> 
+
+     
+       <!-- cube-container -->
+      <!-- <div class="box-card w-[200px] h-[200px] relative preserve-3d transition-transform duration-1000 ease-in-out cursor-pointer hover:animate-rotate3d dark:md:w-[150px] dark:md:h-[150px] mt-10">
+        <div class="face front face-effects"><img class="object-cover" src="img/b.png" alt="white-Car"></div>
+
+        <div class="face back face-effects"><img class="object-cover" src="img/nTiSgXJy.jpg" alt="Flyer"></div>
+
+        <div class="face right face-effects"><img class="object-cover" src="img/c.png" alt="Car"></div>
+
+        <div class="face left face-effects"><img class="object-cover" src="img/d.png" alt="Car"></div>
+
+        <div class="face top face-effects"><img class="object-cover" src="img/e.png" alt="Car"></div>
+        
+        <div class="face bottom face-effects"><img class="object-cover" src="img/EjFGsW8k.jpg" alt=""></div>
+      </div> -->   
+
+<!-- swiper section --> 
+      <div class="w-full flex justify-center">
+         <swiper-container class="mySwiper w-full max-w-[600px] h-[400px]" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+         centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false"> 
+
+          <swiper-slide class="flex justify-center items-center ">
+            <img class="w-auto h-auto max-w-full max-h-full object-contain" src="img/b.png" alt="white-Car">
+          </swiper-slide>
+
+          <swiper-slide class="flex justify-center items-center">
+            <img class="w-auto h-auto max-w-full max-h-full object-contain" src="img/12b.webp" alt="">
+          </swiper-slide>
+
+          <swiper-slide class="flex justify-center items-center">
+            <img class="w-auto h-auto max-w-full max-h-full object-contain" src="img/c.png" alt="Car">
+          </swiper-slide>
+
+          <swiper-slide class="flex justify-center items-center">
+            <img class="w-auto h-auto max-w-full max-h-full object-contain" src="img/d.png" alt="Car">
+          </swiper-slide>
+
+          <swiper-slide class="flex justify-center items-center">
+            <img class="w-auto h-auto max-w-full max-h-full object-contain" src="img/e.png" alt="Car">
+          </swiper-slide>
+
+          <swiper-slide class="flex justify-center items-center">
+            <img class="w-auto h-auto max-w-full max-h-full object-contain" src="img/EjFGsW8k.jpg" alt="">
+          </swiper-slide>
+
+          <swiper-slide class="flex justify-center items-center">
+            <img class="w-auto h-auto max-w-full max-h-full object-contain" src="img/nTiSgXJy-removebg-preview.png" alt="">
+          </swiper-slide>
+
+          <swiper-slide class="flex justify-center items-center">
+            <img class="w-auto h-auto max-w-full max-h-full object-contain" src="img/Dream_car__Fast_Car__luxury_Car__Cars__futuristic_-removebg-preview.png" alt="">
+          </swiper-slide>
+
+          <swiper-slide class="flex justify-center items-center">
+            <img class="w-auto h-auto max-w-full max-h-full object-contain" src="img/car1.jpg" alt="">
+          </swiper-slide>
+
+        </swiper-container>
+      </div>
+
+      <div class="w-full">
+        <section class="w-full flex flex-col items-center">
+          <h2 class="text-4xl font-medium font-serif mb-1 md:mb-1 pt-12 mt-9 text-white">
+            Explore All Vehicles
+          </h2>
+    
+          <nav class="text-center text-smxl">
+            <ul class="space-x-8 flex justify-center ">
+              <li class="hover:underline underline-offset-4 hover:text-gray-300 transition-colors">
+                <a href="#">Cars & Minivan</a>
+              </li>
+              <li class="hover:underline underline-offset-4 hover:text-gray-300 transition-colors">
+                <a href="#">Trucks</a>
+              </li>
+              <li class="hover:underline underline-offset-4 hover:text-gray-300 transition-colors">
+                <a href="#">Crossovers & SUVs</a>
+              </li>
+              <li class="hover:underline underline-offset-4 hover:text-gray-300 transition-colors">
+                <a href="#">Electrified</a>
+              </li>
+              <li class="hover:underline underline-offset-4 hover:text-gray-300 transition-colors">
+                <a href="#">Upcoming Vehicles</a>
+              </li>
+            </ul>
+          </nav>
+          <hr class="w-11/12 border-gray-300 mt-4"/>
+        </section>
+      </div>
+
+      <section class="md:flex items-center gap-10 text-center max-w-4xl px-6">
+        <div class="w-64 flex-shrink-0 mb-8 md:mb-0 m-auto md:m-0">
+          <img class="w-full h-auto rounded-lg hover:shadow-2xl cursor-pointer transition-all -scale-x-95 md:scale-x-95" src="img/EjFGsW8k-removebg-preview.png" alt="Car-keys">
+        </div>
+        <figure class="my-12">
+          <blockquote class="relative">
+          <p class="text-2xl dark:text-slate-400 sm:text-xl text-left mt-2 text-white font-light leading-relaxed md:text-left before:content-['\201C'] before:font-serif before:-top-14 before:-left-8 sm:before:-left-16 md:before:-left-16 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 before:absolute after:content-['\201D'] after:font-serif after:-bottom-32 after:-right-5 sm:after:-right-10 md:after:-right-3 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2 after:absolute">
+            <b>Welcome to <strong>Mizam</strong>, </b> your ultimate destination for exploring a diverse range of vehicles. Whether you're in the market for a sleek car, a rugged truck, or an eco-friendly electric vehicle, we've got you covered. Our platform offers comprehensive information, reviews, and comparisons to help you make informed decisions. Dive into our extensive collection and find the perfect vehicle that suits your lifestyle and needs. Start your journey with <b><i>Mizam</i></b> today and drive into the future with confidence!
+          </p>
+          </blockquote>
+        </figure>
+      </section>
+
+      <section class="md:flex items-center gap-10 text-center max-w-4xl px-6">
+        <div class="w-64 flex-shrink-0 mb-8 md:mb-0 m-auto md:m-0">
+          <img class="w-full h-auto rounded-lg hover:shadow-2xl cursor-pointer transition-all -scale-x-95 md:scale-x-95" src="img/nTiSgXJy-removebg-preview.png" alt="Car-keys">
+        </div>
+        <figure class="my-12">
+          <blockquote class="relative">
+             <p class="text-2xl dark:text-slate-400 sm:text-xl text-left mt-2 text-white font-light leading-relaxed md:text-left before:content-['\201C'] before:font-serif before:-top-14 before:-left-8 sm:before:-left-16 md:before:-left-16 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 before:absolute after:content-['\201D'] after:font-serif after:-bottom-32 after:-right-5 sm:after:-right-10 md:after:-right-3 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2 after:absolute">
+           At <strong><b>Mizam</b></strong>, we understand that buying a vehicle is a significant decision. That's why we go beyond just providing information. We offer personalized recommendations based on your needs and preferences. Explore our virtual showroom, compare models side-by-side, and even schedule test drives at your convenience. Plus, with our exclusive deals and financing options, owning your dream vehicle has never been easier. Ready to find the perfect ride? <em>Start exploring now and let Mizam drive you towards your next adventure!</em> 
+          </p>
+          </blockquote>
+          <figcaption class="italic text-xl sm:text-2xl ml-4 text-right mt-14  text-slate-500 dark:text-slate-400">
+            &#8212; Mariam Akerele
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="grid gap-8 lg:grid lg:grid-cols-3 lg:gap-10 lg:mb-8">
+         <div class="min-w-96 h-auto bg-white rounded-xl relative ">
+          <img class="flex w-50 h-50" src="img/d.png" alt="">
+          <span class="text-xs z-10 text-gray-900 font-medium ml-5 absolute -mt-24">FEATURED STORIES</span>
+          <span class="text-2xl z-10 text-gray-900 font-bold ml-5 absolute -mt-20">Enjoy 15% Off Sitewide</span>
+          <a class="z-10 absolute text-sm bg-gray-700 font-medium -mt-6 hover:opacity-90 hover:translate-x-5 ml-5 py-3 px-6 rounded-3xl" href="#"><button class="">Shop Now</button></a>
+         </div> 
+         <div class="min-w-96 h-auto bg-white rounded-xl relative ">
+          <img class="flex w-50 h-50 hover:-translate-x-5" src="img/EjFGsW8k-removebg-preview.png" alt="">
+          <span class="text-xs z-10 text-gray-900 font-medium ml-5 absolute -mt-24">FEATURED STORIES</span>
+          <span class="text-2xl z-10 text-gray-900 font-bold ml-5 absolute -mt-16">AN EASIER WAY TO BUY YOUR NEXT CAR</span>
+          <a class="z-10 absolute text-sm bg-gray-700 font-medium mt-0 hover:opacity-90 hover:translate-x-5 ml-5 py-3 px-6 rounded-3xl" href="#"><button class="">LEARN MORE</button></a>
+         </div> 
+         <div class="min-w-96 h-auto bg-white rounded-xl relative ">
+          <img class="flex w-50 h-50" src="img/Dream_car__Fast_Car__luxury_Car__Cars__futuristic_-removebg-preview.png" alt="">
+          <span class="text-xs z-10 text-gray-900 font-medium ml-5 absolute -mt-24">FEATURED STORIES</span>
+          <span class="text-2xl z-10 text-gray-900 font-bold ml-5 absolute -mt-20">Enjoy 15% Off Sitewide</span>
+          <a class="z-10 absolute text-sm bg-gray-700 font-medium  -mt-6 hover:opacity-90 hover:translate-x-5 ml-5 py-3 px-6 rounded-3xl" href="#"><button class="">LEARN MORE</button></a>
+         </div> 
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-[#8B5CF6] text-white text-center py-10">
+      <!-- @lg sec -->
+      <section class="max-w-5xl md:mx-auto p-4 mb-10">
+        <nav class="hidden lg:flex lg:flex-wrap lg:justify-center lg:space-x-8 font-medium ">
+          <a class="hover:opacity-90 hover:underline" href="#">Accessibility</a>
+          <a class="hover:opacity-90 hover:underline" href="#">YOUR PRIVACY CHOICE</a>
+          <a class="hover:opacity-90 hover:underline" href="#">HOW TO DISCONNECT REMOTE VEHICLE ACCESS</a>
+          <a class="hover:opacity-90 hover:underline" href="#">Cookies Consent Options</a>
+        </nav>
+      </section>
+
+      <!-- @sm:md sec -->
+       <section class="flex text-left max-w-4xl p-4 mb-10 -mt-16 lg:hidden">
+        <nav class="flex flex-col font-medium space-y-4">
+          <a class="hover:opacity-90 hover:underline" href="#">Accessibility</a>
+          <a class="hover:opacity-90 hover:underline text-red-700" href="#">YOUR PRIVACY CHOICE</a>
+          <a class="hover:opacity-90 hover:underline" href="#">HOW TO DISCONNECT REMOTE VEHICLE ACCESS</a>
+          <a class="hover:opacity-90 hover:underline" href="#">Cookies Consent Options</a>
+        </nav>
+      </section>
+
+      <div class="lg:flex lg:items-center lg:justify-between lg:mx-auto lg:max-w-2xl mx-5 mb-12">
+        <a href="#"><button class="bg-red-600 lg:py-1.5 py-1.5 px-6 lg:px-5 font-medium rounded-3xl hover:bg-red-700 hover:opacity-90 translations-all duration-300 hover:translate-x-5 sm:-mt-6 mb-4 ">
+          Manage Preferences
+        </button></a>
+
+        <div class="flex lg:-mt-3 space-x-2 sm:space-x-6 sm:mt-5">
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/Facebook.png" alt=""/>
+          </a>
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/Linkedin.png">
+          </a>
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/YOUTUBE.png">
+          </a>
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/x.png">
+          </a>
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/insta.png">
+          </a>
+          <a href="#" class="border hover:border-2 w-8 h-8 sm:w-10 sm:h-10 flex justify-center rounded-full hover:-translate-x-2"><img src="img/Tiktok.png">
+          </a>
+        </div>
+      </div>
+
+           <!-- more links on sm:md -->
+            <div class="flex flex-col">
+              <div class="flex justify-between md:hidden border-b-2 border-gray-400 py-3 bg-white">
+                 <span class="font-bold dark:text-slate-600">
+                  SHOPPING TOOLS
+                 </span> 
+                 <span class="cursor-pointer">➕</span>
+              </div>
+
+              <div class="flex justify-between md:hidden border-b-2 border-gray-400 py-3 bg-white">
+                 <a href="vehicle.html">
+                  <span class="font-bold dark:text-slate-600">
+                  VEHICLES
+                 </span>
+                </a>
+                 <span class="cursor-pointer">➕</span>
+              </div>
+              <div class="flex justify-between md:hidden border-b-2 border-gray-400 py-3 bg-white">
+                 <span class="font-bold dark:text-slate-600">
+                  HELPFUL LINKS
+                 </span> 
+                 <span class="cursor-pointer">➕</span>
+              </div>
+              <div class="flex justify-between md:hidden border-b-2 border-gray-400 py-3 bg-white">
+                 <span class="font-bold dark:text-slate-600">
+                  OWNERS
+                 </span> 
+                 <span class="cursor-pointer">➕</span>
+              </div>
+              <div class="flex justify-between md:hidden border-b-2 border-gray-400 py-3 bg-white">
+                 <span class="font-bold dark:text-slate-600">
+                  ABOUT MIZAM
+                 </span> 
+                 <span class="cursor-pointer">➕</span>
+              </div>
+            </div>
+
+            <!-- more links on lg -->
+      <div class="lg:flex lg:mx-14 justify-between hidden mb-24">
+        <!-- shopping tools -->
+        <div class="flex flex-col">
+          <h3 class="font-bold text-base mb-2">SHOPPING TOOLS</h3>
+          <a href="#" class="text-sm hover:underline hover:opacity-90  ml-14 mb-2">
+            <span>
+              Kelley Blue Book Trade-In Value
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90  mb-2 -ml-12">
+            <span>
+             Build Your Car
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-9">
+            <span>
+              Search Inventory
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-14">
+            <span>
+              Find a Dealer 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-9">
+            <span>
+              Shop Online With SmartPath 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-16">
+            <span>
+              Special Offer
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-4">
+            <span>
+             What Fits My Budget
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 -ml-7 mb-2">
+            <span>
+              Payment Estimator
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-10">
+            <span>
+              Request a Quote  
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-10">
+            <span>
+              Mizam Certified Used Vehicles
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-1">
+            <span>
+              Buy Parts & Accessories
+            </span>
+          </a>
+        </div>
+               <!-- Vehicles -->
+        <div class="flex flex-col">
+          <h3 class="font-bold text-base mb-2">VEHICLES</h3>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-11">
+            <span>
+              All Mizam Vehicles
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-10">
+            <span>
+              SUVs
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-9">
+            <span>
+              Trucks
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-11">
+            <span>
+              Cars
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-1">
+            <span>
+              Crossovers 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-10">
+            <span>
+              Electrified Vehicles
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-8">
+            <span>
+             Hybrid 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-1">
+            <span>
+              Hybrid Cars
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-0">
+            <span>
+             Hybrid SUVs  
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-3">
+            <span>
+              TRD Pro Series
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-9">
+            <span>
+              Nightshade Series
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-3">
+            <span>
+              GR Garage
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-14">
+            <span>
+              All Upcoming Vehicles
+            </span>
+          </a>
+        </div>
+           <!-- Helpful Links -->
+        <div class="flex flex-col">
+          <h3 class="font-bold text-base mb-2">HELPFUL LINKS</h3>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-20 -mr-2">
+            <span>
+              Dealers
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-2">
+            <span>
+             Deals and Incentives
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-36 -ml-4">
+            <span>
+              Audio Multimedia & Connected services
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-14 -ml-1">
+            <span>
+              Mobile Phone Compatibility 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-20 ml-2">
+            <span>
+              Mobility 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-14 ml-2">
+            <span>
+              Mizam Fleet
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-7">
+            <span>
+             Mizam Financial Services
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-9">
+            <span>
+              Southeast Mizam Finance
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-6">
+            <span>
+              Mizam Insurance 
+            </span>
+          </a>
+        </div>
+              <!-- OwnerS -->
+        <div class="flex flex-col">
+          <h3 class="font-bold text-base mb-2">OWNERS</h3>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-5">
+            <span>
+              Owners Home
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-36 mr-1">
+            <span>
+             MizamCare & Maintenance Plans
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-40">
+            <span>
+              Safety Recalls & Service Campaigns
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-9">
+            <span>
+              Service Centers 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-9">
+            <span>
+              Service Specials
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-2">
+            <span>
+              Safety Hub
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-11">
+            <span>
+              Schedule Service
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -mr-8">
+            <span>
+              Warning Lights
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-20 mr-1">
+            <span>
+              Manuals & Warranties  
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-11 -mr-1">
+            <span>
+              Manage Payments
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-4">
+            <span>
+              Rent a Mizam
+            </span>
+          </a>
+        </div>
+          <!-- ABOUT MIZAM -->
+        <div class="flex flex-col">
+          <h3 class="font-bold text-base mb-2">ABOUT MIZAM</h3>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-16">
+            <span>
+              Careers
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 -ml-14 -mr-1">
+            <span>
+             About Us
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-6">
+            <span>
+              Our Company
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-1">
+            <span>
+              Mizam Outfitters 
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-10">
+            <span>
+              Newsroom
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-6">
+            <span>
+              Mizam Global
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-6">
+            <span>
+              Gazoo Racing
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 mr-10">
+            <span>
+              Plant Tours
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-3">
+            <span>
+              Partner With Mizam  
+            </span>
+          </a>
+          <a href="#" class="text-sm hover:underline hover:opacity-90 mb-2 ml-14">
+            <span>
+              Hydrogen Fuel Cell Solution
+            </span>
+          </a>
+        </div>
+      </div>
+      <hr class="lg:flex w-10/12 mx-auto bg-gray-700 hidden">
+      <section class="flex md:justify-center">
+        <div class="bg-white w-12 h-11 mt-10 ml-5">
+          <img class="w-10 h-10" src="img/a.png" alt="LOGO">
+        </div>
+        <h2 class="mt-11 text-3xl font-semibold ml-3">MIZAM</h2>
+      </section>
+
+      <div class="flex space-x-6 mt-10 ml-5 font-medium text-sm md:justify-center">
+        <a class="hover:underline" href="#">Contact Us</a>
+        <a class="hover:underline" href="#">FAQs</a>
+        <a class="hover:underline" href="#">Español</a>
+      </div>
+      
+      <span class="flex mt-14  text-xs md:justify-center">&copy;0025 Mizam Motor Sales, Nigeria, Inc. All information applies to Nigeria. vehicles only.</span>
+
+      <section class="flex space-x-5 justify-center mt-8 mb-24 md:mb-16">
+        <a class="text-xs border-r hover:underline" href="#">
+          <span class="mr-4">
+            Privacy Notice
+          </span>
+        </a>
+        <a class="text-xs border-r-2 hover:underline" href="#">
+          <span class="mr-4">
+            Legal Terms
+          </span>
+        </a>
+        <a class="text-xs hover:underline" href="#">
+          <span>
+            Site Map
+          </span>
+        </a>
+      </section>
+    </footer>
+</body>
+</html>
