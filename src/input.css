@@ -14,9 +14,11 @@
 
 @layer components {
   .face-effects {
-    @apply before:content-[''] before:absolute before:w-full before:h-full before:bg-gradient-to-tr from-transparent via-white/10 to-transparent before:top-[-100%] before:left-[-100%] before:[transform:translateZ(20px)] 
-        before:transition-all before:duration-500 before:ease-in-out before:hover:top-full before:hover:left-full
-        after:content-[''] after:absolute after:inset-0 after:opacity-0 after:[background:linear-gradient(135deg,transparent_0%,rgba(255,255,255,0.05)_50%,transparent_100%)] after:transition-all after:duration-300 after:ease-in-out after:hover:opacity-100;
+    @apply relative overflow-hidden; /* Add relative and overflow-hidden to the parent */
+    @apply from-transparent via-white/10 to-transparent; /* Apply gradient colors to the base class */
+    @apply before:content-[''] before:absolute before:w-full before:h-full before:bg-gradient-to-tr before:top-[-100%] before:left-[-100%] before:[transform:translateZ(20px)] before:transition-all before:duration-500 before:ease-in-out;
+    @apply hover:before:top-full hover:before:left-full; /* Correct hover state for pseudo-element */
+    @apply after:content-[''] after:absolute after:inset-0 after:opacity-0 after:[background:linear-gradient(135deg,transparent_0%,rgba(255,255,255,0.05)_50%,transparent_100%)] after:transition-all after:duration-300 after:ease-in-out hover:after:opacity-100;
   }
 }
 
@@ -46,7 +48,7 @@
     transition: all 0.3s ease;
     overflow: hidden;
     
-}
+
 
 .front  { transform: translateZ(75px); }
 
@@ -74,4 +76,3 @@
   transform: translateY(75px) rotateX(-90deg);
   border-color: #8B5CF6;
 } */
-
