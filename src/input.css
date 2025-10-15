@@ -1,28 +1,52 @@
 @tailwind base;
+@tailwind base;
+
 @tailwind components;
+@tailwind components;
+
+@tailwind utilities;
 @tailwind utilities;
 
-
 @keyframes rotate3d {
+  @keyframes rotate3d {
     from {
+      from {
         transform: rotate3d(1, 1, 0, 0deg);
+        transform: rotate3d(1, 1, 0, 0deg);
+      }
     }
-    to {
-        transform: rotate3d(1, 1, 0, 360deg);
-    }
-}
 
-@layer components {
-  .face-effects {
-    @apply relative overflow-hidden; /* Add relative and overflow-hidden to the parent */
-    @apply from-transparent via-white/10 to-transparent; /* Apply gradient colors to the base class */
-    @apply before:content-[''] before:absolute before:w-full before:h-full before:bg-gradient-to-tr before:top-[-100%] before:left-[-100%] before:[transform:translateZ(20px)] before:transition-all before:duration-500 before:ease-in-out;
-    @apply hover:before:top-full hover:before:left-full; /* Correct hover state for pseudo-element */
-    @apply after:content-[''] after:absolute after:inset-0 after:opacity-0 after:[background:linear-gradient(135deg,transparent_0%,rgba(255,255,255,0.05)_50%,transparent_100%)] after:transition-all after:duration-300 after:ease-in-out hover:after:opacity-100;
+    to {
+      to {
+        transform: rotate3d(1, 1, 0, 360deg);
+        transform: rotate3d(1, 1, 0, 360deg);
+      }
+    }
   }
 }
 
+@layer components {
+  @layer components {
+    .face-effects {
+      .face-effects {
+        @apply relative overflow-hidden;
+        @apply relative overflow-hidden; /* Add relative and overflow-hidden to the parent */
 
+        @apply from-transparent via-white/10 to-transparent;
+        @apply from-transparent via-white/10 to-transparent; /* Apply gradient colors to the base class */
+
+        @apply before:content-[''] before:absolute before:w-full before:h-full before:bg-gradient-to-tr before:top-[-100%] before:left-[-100%] before:[transform:translateZ(20px)] before:transition-all before:duration-500 before:ease-in-out;
+        @apply before:content-[''] before:absolute before:w-full before:h-full before:bg-gradient-to-tr before:top-[-100%] before:left-[-100%] before:[transform:translateZ(20px)] before:transition-all before:duration-500 before:ease-in-out;
+
+        @apply hover:before:top-full hover:before:left-full;
+        @apply hover:before:top-full hover:before:left-full; /* Correct hover state for pseudo-element */
+
+        @apply after:content-[''] after:absolute after:inset-0 after:opacity-0 after:[background:linear-gradient(135deg,transparent_0%,rgba(255,255,255,0.05)_50%,transparent_100%)] after:transition-all after:duration-300 after:ease-in-out hover:after:opacity-100;
+        @apply after:content-[''] after:absolute after:inset-0 after:opacity-0 after:[background:linear-gradient(135deg,transparent_0%,rgba(255,255,255,0.05)_50%,transparent_100%)] after:transition-all after:duration-300 after:ease-in-out hover:after:opacity-100;
+      }
+    }
+  }
+}
 
 /* .preserve-3d {
   transform-style: preserve-3d;
@@ -41,7 +65,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     backface-visibility: visible;
-    color: white;  /* Ensure text is visible */
+    color: white;
     border-radius: 12px;
     background: linear-gradient(145deg, #2a2a2a, #383838);
     border: 2px solid #6366F1;
